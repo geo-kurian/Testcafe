@@ -1,0 +1,27 @@
+{
+  "name": "testcafe_automation",
+  "version": "1.0.0",
+  "description": "UI automation - TestCafe tool",
+  "scripts": {
+    "test": "testcafe chrome tests/",
+    "test_multiple_browser": "testcafe chrome,firefox tests/ --test-meta Sanity=Y",
+    "test_parallel": "testcafe -c 3 chrome tests/",
+    "test_mobile_iphone":"testcafe chrome:emulation:device=iphone X tests/",
+    "test_remote": "testcafe remote tests/",
+    "test_live": "testcafe --live chrome tests/",
+    "test_all": "testcafe all tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geo-kurian/Testcafe.git"
+  },
+  "author": "geo_kurian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geo-kurian/Testcafe/issues"
+  },
+  "homepage": "https://github.com/geo-kurian/Testcafe#readme",
+  "devDependencies": {
+    "testcafe": "^1.18.1"
+  }
+}
